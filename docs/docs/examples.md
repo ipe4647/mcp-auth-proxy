@@ -116,6 +116,7 @@ spec:
                 secretKeyRef:
                   name: mcp-auth-proxy-keys
                   key: jwt-private-key
+          args: ["{mcp-server-url}"]
           volumeMounts:
             - name: data
               mountPath: /data
