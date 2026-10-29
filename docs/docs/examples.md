@@ -86,6 +86,8 @@ spec:
   selector:
     matchLabels:
       app: mcp-auth-proxy
+  strategy:
+    type: Recreate
   template:
     metadata:
       labels:
