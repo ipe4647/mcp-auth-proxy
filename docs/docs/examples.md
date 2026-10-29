@@ -272,9 +272,8 @@ spec:
         # Auth proxy sidecar
         - name: mcp-auth-proxy
           image: ghcr.io/sigbit/mcp-auth-proxy:latest-minimal
-          imagePullPolicy: Always
           args:
-            - "--external-url=https://{your-domain}"
+            - --external-url=https://mcp.example.com
             - --no-auto-tls
             - "http://localhost:8000" # Your MCP server port
           ports:
